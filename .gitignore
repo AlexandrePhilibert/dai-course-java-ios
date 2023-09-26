@@ -39,3 +39,8 @@ Thumbs.db
 
 # Folder config file
 [Dd]esktop.ini
+
+# Output files
+
+*.txt
+*.bin
