@@ -9,7 +9,8 @@ public class BinaryFileWriter implements Writable {
 
     @Override
     public void write(String filename, int sizeInBytes) throws IOException {
-        // TODO : implement this method
-        throw new UnsupportedOperationException("Not implemented yet");
+        try (FileOutputStream outputStream = new FileOutputStream(filename)) {
+            outputStream.write(new byte[sizeInBytes]);
+        }
     }
 }
